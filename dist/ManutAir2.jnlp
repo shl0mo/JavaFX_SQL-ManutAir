@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ManutAir2.jnlp">
+  <information>
+    <title>ManutAir2</title>
+    <vendor>elizeu e nilce</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ManutAir2.jar" size="56146" download="eager" />
+    <jar href="lib\FastInfoset-1.2.15.jar" size="311876" download="eager" />
+    <jar href="lib\antlr-2.7.7.jar" size="445288" download="eager" />
+    <jar href="lib\byte-buddy-1.10.22.jar" size="3510658" download="eager" />
+    <jar href="lib\classmate-1.5.1.jar" size="67815" download="eager" />
+    <jar href="lib\hibernate-commons-annotations-5.1.2.Final.jar" size="78948" download="eager" />
+    <jar href="lib\hibernate-core-5.5.2.Final.jar" size="7513644" download="eager" />
+    <jar href="lib\hibernate-jpamodelgen-5.5.2.Final.jar" size="186054" download="eager" />
+    <jar href="lib\istack-commons-runtime-3.0.7.jar" size="25523" download="eager" />
+    <jar href="lib\jandex-2.2.3.Final.jar" size="202552" download="eager" />
+    <jar href="lib\javassist-3.27.0-GA.jar" size="782774" download="eager" />
+    <jar href="lib\javax.activation-api-1.2.0.jar" size="56674" download="eager" />
+    <jar href="lib\javax.persistence-api-2.2.jar" size="164556" download="eager" />
+    <jar href="lib\jaxb-api-2.3.1.jar" size="128076" download="eager" />
+    <jar href="lib\jaxb-runtime-2.3.1.jar" size="1093432" download="eager" />
+    <jar href="lib\jboss-logging-3.4.2.Final.jar" size="60911" download="eager" />
+    <jar href="lib\jboss-transaction-api_1.2_spec-1.1.1.Final.jar" size="26290" download="eager" />
+    <jar href="lib\postgresql-42.2.21.jar" size="1005332" download="eager" />
+    <jar href="lib\stax-ex-1.8.jar" size="36073" download="eager" />
+    <jar href="lib\txw2-2.3.1.jar" size="70288" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ManutAir2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="manutair2.ManutAir2"  name="ManutAir2" />
+  <update check="always"/>
+</jnlp>

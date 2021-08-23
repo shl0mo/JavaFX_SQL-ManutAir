@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manutair2.FXMLloginClienteController">
+    <children>
+      <Label id="mainLabel" fx:id="mainLabel" layoutX="23.0" layoutY="56.0" prefHeight="25.0" prefWidth="274.0" text="Entre com o seu Número de Contrato">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeroContrato" layoutX="86.0" layoutY="100.0" promptText="Número de Contrato" />
+      <Button fx:id="entrarSistema" layoutX="136.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleBotaoEntrarSistema" text="Entrar" />
+      <Button fx:id="voltar" layoutX="14.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleBotaoVoltar" prefHeight="10.0" prefWidth="48.0" text="Voltar" />
+      <Button fx:id="inicio" layoutX="261.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleBotaoInicio" text="Início" />
+    </children>
+</AnchorPane>

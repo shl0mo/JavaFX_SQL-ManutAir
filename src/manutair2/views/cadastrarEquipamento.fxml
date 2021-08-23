@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manutair2.FXMLcadastrarEquipamentoController">
+    <children>
+      <Label id="mainLabel" fx:id="mainLabel" layoutX="3.0" layoutY="36.0" prefHeight="66.0" prefWidth="362.0" text="Para cadastrar o equipamento, preencha a tabela abaixo &#10;com a marca, o modelo e o número de série do equipamento, &#10;separando essas informações por vírgula e com cada equipamento &#10;em uma linha (como foi feito no primeiro cadastro):" textAlignment="CENTER" />
+      <Button fx:id="inicio" layoutX="310.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBotaoInicio" text="Início" />
+      <TextArea fx:id="equipamentos" layoutX="41.0" layoutY="113.0" prefHeight="130.0" prefWidth="286.0" promptText="Ex: MultiAir,XCR32,76546 " />
+      <Button fx:id="botaoCadastrar" layoutX="151.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleBotaoCadastrar" text="Cadastrar" />
+      <Button fx:id="voltar" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBotaoVoltar" text="Voltar" />
+    </children>
+</AnchorPane>

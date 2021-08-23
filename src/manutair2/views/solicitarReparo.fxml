@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manutair2.FXMLsolicitarReparoController">
+   <children>
+      <Label id="mainLabel" fx:id="mainLabel" alignment="CENTER" layoutY="34.0" prefHeight="70.0" prefWidth="427.0" text="Selecione abaixo, pelo id, o equipamento a ser reparado. &#10;Forneça também o endereço onde ele se encontra  e uma descriçao &#10;sobre o problema" textAlignment="CENTER" />
+      <Label layoutX="108.0" layoutY="373.0" text="id:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldId" layoutX="136.0" layoutY="373.0" prefHeight="27.0" prefWidth="82.0" />
+      <Button fx:id="solicitar" layoutX="229.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleBotaoSolicitar" prefHeight="27.0" prefWidth="89.0" text="Solicitar" />
+      <Button fx:id="inicio" layoutX="326.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleBotaoInicio" prefHeight="25.0" prefWidth="89.0" text="Início" />
+      <TableView fx:id="tabela" layoutX="9.0" layoutY="98.0" prefHeight="150.0" prefWidth="407.0">
+         <columns>
+            <TableColumn fx:id="colunaId" prefWidth="28.0" text="id" />
+            <TableColumn fx:id="colunaMarca" prefWidth="108.57144165039062" text="Marca" />
+            <TableColumn fx:id="colunaModelo" prefWidth="125.71429443359375" text="Modelo" />
+            <TableColumn fx:id="colunaNumeroSerie" prefWidth="142.85712977818082" text="Nº. Série" />
+         </columns>
+      </TableView>
+      <Button fx:id="voltar" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleBotaoVoltar" text="Voltar" />
+      <TextArea fx:id="descricaoProblema" layoutX="10.0" layoutY="305.0" prefHeight="47.0" prefWidth="407.0" promptText="Descreva brevemente o problema com o seu equipamento" />
+      <TextField fx:id="enderecoEquipamento" layoutX="10.0" layoutY="266.0" prefHeight="25.0" prefWidth="407.0" promptText="Endereço" />
+   </children>
+</AnchorPane>

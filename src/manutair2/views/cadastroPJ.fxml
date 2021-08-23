@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manutair2.FXMLcadastroPJController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="38.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="244.0" text="Complete os campos de dados para&#10;realizar o seu cadastro:" textAlignment="CENTER" AnchorPane.bottomAnchor="472.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="26.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="razaoSocial" layoutX="23.0" layoutY="86.0" prefHeight="25.0" prefWidth="244.0" promptText="Razão Social" />
+            <TextField fx:id="nomeResponsavel" layoutX="23.0" layoutY="135.0" prefHeight="25.0" prefWidth="244.0" promptText="Nome do Responsável" />
+            <TextField fx:id="telefonePJ" layoutX="23.0" layoutY="190.0" prefHeight="25.0" prefWidth="244.0" promptText="Telefone do Responsável:" />
+            <TextField fx:id="cnpj" layoutX="22.0" layoutY="238.0" prefHeight="25.0" prefWidth="89.0" promptText="CNPJ" />
+            <Button fx:id="botaoContinuar" layoutX="109.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleBotaoCadastrar" text="Cadastrar" />
+            <Label layoutX="27.0" layoutY="62.0" text="Razão Social:" />
+            <Label layoutX="23.0" layoutY="117.0" text="Nome do Responsável:" />
+            <Label layoutX="25.0" layoutY="173.0" text="Telefone do Responsável:" />
+            <Label fx:id="CNPJ" layoutX="23.0" layoutY="220.0" text="CNPJ:" />
+            <Label layoutX="119.0" layoutY="220.0" text="Endereço:" />
+            <TextField fx:id="enderecoPJ" layoutX="117.0" layoutY="238.0" prefHeight="25.0" prefWidth="148.0" promptText="Endereço" />
+            <TextArea fx:id="equipamentos" layoutX="25.0" layoutY="350.0" prefHeight="149.0" prefWidth="244.0" promptText="Informe a marca, o modelo e o número de série dos equipamentos, separando essas informações por vírgula e em uma linha para cada equipamento (desta forma, os equipamentos devem ser seprados por &quot;enter&quot;). Ex:                                               AirMil,XML41,782361                                MultAir,BNW89,232198" />
+            <Label layoutX="26.0" layoutY="332.0" text="Equipamentos:" />
+            <Button fx:id="voltar" layoutX="14.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleBotaoVoltar" prefHeight="10.0" prefWidth="48.0" text="Voltar" />
+            <Button fx:id="inicio" layoutX="239.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleBotaoInicio" text="Início" />
+            <TextField fx:id="vigencia" layoutX="22.0" layoutY="272.0" prefHeight="25.0" prefWidth="244.0" promptText="Início da Vigência" />
+            <TextField fx:id="duracao" layoutX="22.0" layoutY="306.0" prefHeight="25.0" prefWidth="244.0" promptText="Duração (meses)" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
